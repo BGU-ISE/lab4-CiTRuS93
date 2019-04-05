@@ -14,12 +14,8 @@ namespace Lab4
         //Declare an instance for log4net
         private static readonly ILog Log =
               LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        static void Main(string[] args)
-        {
-            ImplementLoggingFuntion();
-        }
 
-        private static void ImplementLoggingFuntion()
+        private static void LogExample()
         {
             /* We have 5 levels of log message. Let's test all.
              *  FATAL
@@ -52,5 +48,12 @@ namespace Lab4
             Console.WriteLine("Press any key to close the application");
             Console.ReadKey();
         }
+
+        static void Main(string[] args)
+        {
+            LogExample();
+        }
+
+
     }
 }
